@@ -9,6 +9,10 @@ jHipster extension for [StarUML 2](http://staruml.io/) to create [jHipster Domai
 
 Follow the intructions to install the [staruml extension from a github repository](http://docs.staruml.io/en/latest/managing-extensions.html#install-extension) using this url https://github.com/waynethompson/staruml-jhipster/
 
+1. Show Extension Manager by selecting Tools | Extension Manager....
+2. Select Install From Url button.
+3. Enter **https://github.com/waynethompson/staruml-jhipster/** on input box
+4. press Install button.
 
 
 
