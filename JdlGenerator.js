@@ -210,12 +210,9 @@ define(function (require, exports, module) {
      * @param {Object} options
      */
     JdlGenerator.prototype.writeEnum = function (codeWriter, elem, options) {
-        var i, len, terms = [];
+        var i, len;
 
-        terms.push("enum");
-        terms.push(elem.name);
-
-        codeWriter.writeLine(terms.join(" ") + " {");
+        codeWriter.writeLine("enum "+ elem.name + " {");
         codeWriter.indent();
 
         // Literals

@@ -85,7 +85,7 @@ define(function (require, exports, module) {
     
     CommandManager.register("jHipster",CMD_JHIPSTER, 
                             CommandManager.doNothing);   
-    CommandManager.register("Generate Code...", CMD_JHIPSTER_GENERATE, 
+    CommandManager.register("Generate JDL...", CMD_JHIPSTER_GENERATE, 
                             handleGenerate);
     CommandManager.register("Reverse Code...", CMD_JHIPSTER_REVERSE, 
                             handleReverse);
