@@ -123,7 +123,8 @@ define(function (require, exports, module) {
         var i, len, terms = [];
 
         // Class
-        codeWriter.writeLine("entity " + elem.name + " {");
+        var name = elem.name.charAt(0).toUpperCase() + elem.name.slice(1);
+        codeWriter.writeLine("entity " + name + " {");
         codeWriter.indent();
 
         // Member Variables
@@ -217,7 +218,7 @@ define(function (require, exports, module) {
 
         // Literals
         for (i = 0, len = elem.literals.length; i < len; i++) {
-            codeWriter.writeLine(elem.literals[i].name + (i < elem.literals.length - 1 ? "," : ""));
+            codeWriter.writeLine(elem.literals[i].name.toUpperCase() + (i < elem.literals.length - 1 ? "," : ""));
         }
 
         codeWriter.outdent();
